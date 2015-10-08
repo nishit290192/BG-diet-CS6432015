@@ -1,5 +1,4 @@
-<html><body>
- <h1> Blood Message </h1>
+<?php echo "<html><body><h1> Blood Message </h1>"; ?>
  <?php
     /* Send an SMS using Twilio. You can run this file 3 different ways:
      *
@@ -79,7 +78,7 @@ switch ($result) {
 
 function index(){
 	//$response = new Services_Twilio_Twiml();
-	$response = "I'm sorry, the blood group you have enter is wrong.  Please try again.
+	$response = "I'm sorry, the blood group you have enter is wrong.  Please try again.";
 	return $response;
 }
 function bloodA(){
@@ -135,4 +134,6 @@ function bloodO(){
 
 
     ?>
-    </body></html>
+
+
+  <?php echo  "</body></html>"; ?>
